@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.about-container {
+  transform: perspective(600px) rotateX(0deg); /* Initial state: no rotation */
+}
+
+.about-container.flipped {
+  transform: perspective(600px) rotateX(-180deg); /* Flipped state: 180-degree rotation */
+}
+
+body {
+  @apply bg-secondary; 
+}
