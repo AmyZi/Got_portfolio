@@ -44,6 +44,12 @@
   transform: perspective(600px) rotateX(-180deg); /* Flipped state: 180-degree rotation */
 }
 
-body {
-  @apply bg-secondary; 
+
+.fixed.bottom-8 {
+  bottom: 2rem; /* Adjust the bottom value to move the buttons further down */
+}
+
+.space-x-8 {
+  margin-right: 2rem; 
+  margin-left: 2rem;
 }

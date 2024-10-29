@@ -22,14 +22,17 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
+      <Router basename="/Got_portfolio">
         <Header />
         <Routes>
-          <Route path="/" element={
-            <>
-              <FlipRevealApp />
-            </>
-          } />
+          <Route
+            path="/"
+            element={
+              <>
+                <FlipRevealApp />
+              </>
+            }
+          />
         </Routes>
         <Footer />
       </Router>

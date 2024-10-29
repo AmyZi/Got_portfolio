@@ -101,7 +101,7 @@ const Header = ({ setCurrentSection, currentSection }) => {
 
 const NavigationButtons = ({ currentSection, totalSections, onNavigate }) => {
   return (
-    <div className="fixed bottom-8 left-0 right-0 flex justify-center space-x-4">
+    <div className="absolute bottom-8 left-0 right-0 flex flex justify-between">
       {currentSection === totalSections - 1 ? (
         <>
           <button
@@ -190,11 +190,11 @@ const Skills = ({ onNavigate, currentSection }) => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["Python", "JavaScript", "C", "R"]
+      skills: ["Python", "JavaScript", "C", "PHP"]
     },
     {
       title: "Web Technologies",
-      skills: ["React", "Node.js", "HTML/CSS", "SQL", "MongoDB"]
+      skills: ["React", "Node.js", "HTML/CSS", "Content Management System", "SQL", "MongoDB"]
     },
     {
       title: "Tools & Frameworks",
@@ -317,7 +317,7 @@ const FlipRevealApp = () => {
   }, []);
 
   return (
-    <div className="h-screen overflow-hidden">
+    <div className=" relative bg-primary h-screen overflow-hidden">
       <Header setCurrentSection={setCurrentSection} currentSection={currentSection} />
       <div className="h-[90vh] mt-[10vh]">
         {sections.map((section, index) => (
